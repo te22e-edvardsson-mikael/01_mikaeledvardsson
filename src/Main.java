@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        test();
+
         if (6 >= 3) {
             System.out.println("Hello world!");
         }
@@ -30,6 +32,46 @@ public class Main {
 
         for (int i = 0; i < 32; i++) {
             System.out.println("hello world!");
+        }
+
+        while (true){
+        for (int i = 0; i < 5; i++) {
+            System.out.print("skriv in ett tal");
+            String inp = scanner.nextLine();
+            int tal = Integer.parseInt(inp);
+
+
+
+        if (tal > 5) {
+            System.out.println("högre än 5!");
+
+        }
+
+        }
+        }
+    }
+
+
+    public static void test(){
+
+        Scanner scan= new Scanner(System.in);
+        boolean cont= true;
+
+        while(true) {
+            try {
+
+                System.out.print("Number please: ");
+                int num = scan.nextInt();
+                scan.nextLine();
+
+                System.out.println("the number is " + num);
+                break;
+            } catch (Exception error) {
+                scan.nextLine();
+                System.out.println("that is not a number");
+
+            }
+            System.out.println("this will run no matter result of try");
         }
 
     }
